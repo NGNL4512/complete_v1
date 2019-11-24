@@ -2,8 +2,11 @@ import edit_distance
 import search
 import numpy as np
 import os
+
+desktop_path = "./images/" #建立c.txt的位置
+
 def text_cw(name,msg):
-    desktop_path = "./images/"
+    
     folder = os.path.exists(desktop_path)
     #判斷結果
     if not folder:

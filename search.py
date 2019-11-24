@@ -69,7 +69,8 @@ def searchkey(filesimilar):
         keyword.append([])
         for word in lines[i].split('，'): #切割逗號
             if word != '':
-                keyword[i].append(word) 
+                keyword[i].append(word)
+                #print(word)
 # =============================================================================
 #                 global K
 #                 k=0
@@ -169,6 +170,12 @@ def init():
     #filesimilar=keysimilar()
     cutword(recording) #斷詞
     score=similar_score()
+    if(score[0]==score[1]==score[2]==score[3]==score[4]==0):
+        score[0]=1
+        score[1]=1
+        score[2]=1
+        score[3]=1
+        score[4]=1
     #bar_graph(score)
     #print(score)
     return score
