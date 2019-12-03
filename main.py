@@ -39,8 +39,8 @@ def init():
     value=np.array([["生氣:"+angry]
                 ,["悲傷:"+sad]
                 ,["焦慮:"+anxiety]
-                ,["憂鬱:"+melancholy]
-                ,["害怕:"+scared]])
+                ,["害怕:"+scared]
+                ,["自殺:"+melancholy]])
     text_cw('c',value)               
 if __name__ == '__main__':
     init()
