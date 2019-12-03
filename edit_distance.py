@@ -120,8 +120,10 @@ def sumnum(sumscore):
     onenum=0
     for i in range(len(sumscore)):
         onenum+=sumscore[i]
+    onenum=onenum-sumscore[2]
     for i in range(len(sumscore)):
-        sumscore[i]=sumscore[i]/onenum
+        if i!=2 and sumscore[i]!=0:
+            sumscore[i]=sumscore[i]/onenum
     return sumscore
 def init():
     #手動輸入

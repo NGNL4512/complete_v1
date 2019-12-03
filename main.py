@@ -33,7 +33,7 @@ def init():
     print(mainsun) #害怕，悲傷，憂鬱，焦慮，生氣'''
     scared=('%.2f'%float(res[0]*ree[0]))
     sad=('%.2f'%float(res[1]*ree[1]))
-    melancholy=('%.2f'%float(res[2]*ree[2]))
+    melancholy=str(res[2]/2)
     anxiety=('%.2f'%float(res[3]*ree[3]))
     angry=('%.2f'%float(res[4]*ree[4]))
     value=np.array([["生氣:"+angry]
